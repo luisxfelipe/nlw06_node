@@ -22,7 +22,7 @@ export class CreateUserService {
         })
 
         if (userAlreadyExists) {
-            throw new Error("User already exisrs")
+            throw new Error("User already exists")
         }
 
         const user = usersRepository.create({
